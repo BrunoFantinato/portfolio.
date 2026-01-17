@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Primeira Página</title>
-    </head>
-    <body>
-        <h1>Titulo da Página </h1>
-        <p>Este é um parágrafo</p>
-    </body>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Bruno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="home">
+        <nav>
+            <div class="logo">Bruno.Dev</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#about">Sobre</a></li>
+            </ul>
+        </nav>
+        <div class="hero-section">
+            <h1>Olá, eu sou o Bruno.</h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas & Futuro Desenvolvedor.</p>
+            <a href="#projects" class="btn">Ver Meus Projetos</a>
+        </div>
+    </header>
+
+    <section id="projects" class="container">
+        <h2>Meus Projetos</h2>
+        <div class="projects-grid">
+            
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-wallet"></i></div>
+                <h3>Rastreador Financeiro</h3>
+                <p>Aplicação web para controle de finanças pessoais. Desenvolvido para praticar lógica de programação e manipulação do DOM.</p>
+                <div class="technologies">
+                    <span>HTML</span><span>CSS</span><span>JS</span>
+                </div>
+                <a href="#" class="card-link" target="_blank">Ver no GitHub <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-cube"></i></div>
+                <h3>JB 3D Showcase</h3>
+                <p>Conceito de página para exibição de serviços de impressão 3D e corte a laser.</p>
+                <div class="technologies">
+                    <span>HTML</span><span>CSS</span>
+                </div>
+                <a href="#" class="card-link">Em Breve</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Sobre Mim</h2>
+        <div class="about-content">
+            <p>Em transição de carreira para a área de Tecnologia, atualmente cursando ADS. Tenho experiência com gestão de negócios (JB 3D) e busco aplicar minha lógica analítica no desenvolvimento de software.</p>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://github.com/BrunoFantinato" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/bruno-fantinato" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:brunao0113@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Bruno. Desenvolvido do zero.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
