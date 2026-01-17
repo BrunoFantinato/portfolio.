@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Controle Financeiro</title>
-    </head>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro | Bruno.Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 <body>
-    <h2>Controle de Despesas</h2>
-<div class="container">
-    <h4> Seu Saldo</h4>
-    <h1 id="balance">R$ 0,00</h1>
+    
+    <div style="width: 100%; max-width: 400px; margin-bottom: -20px; z-index: 10;">
+        <a href="../index.html" style="color: #8257e6; text-decoration: none; font-size: 0.9rem; font-weight: bold;">
+            <i class="fas fa-arrow-left"></i> Voltar ao Portfólio
+        </a>
+    </div>
 
-    <div class="income-expense">
-        <div>
-            <h4>Receitas</h4>
-            <p id="money-plus" class="money plus">R$ 0,00</p>
-        </div>
-        <div>
-            <h4>Despesas</h4>
-        <p id="money-minus" class="money minus">R$ 0,00</p>
+    <div class="container">
+        <h2>Controle de Despesas</h2>
+        
+        <h4>Seu Saldo Atual</h4>
+        <h1 id="balance">R$ 0.00</h1>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Receitas</h4>
+                <p id="money-plus" class="money plus">+ R$0.00</p>
+            </div>
+            <div>
+                <h4>Despesas</h4>
+                <p id="money-minus" class="money minus">- R$0.00</p>
+            </div>
         </div>
 
         <h3>Histórico</h3>
         <ul id="list" class="list">
             </ul>
+
         <h3>Adicionar nova transação</h3>
         <form id="form">
             <div class="form-control">
-                <label for="text">Nome da transação</label>
-                <input type="text" id="text" placeholder="Digite a descrição..." />
+                <label for="text">Nome</label>
+                <input type="text" id="text" placeholder="Ex: Mercado, Freelance..." autocomplete="off" />
             </div>
             <div class="form-control">
-                <label for="amount"
-                    >Valor <br />
-                    (negativo - despesa, positivo - receita)</label
-                >
-                <input type="number" id="amount" placeholder="Digite o valor..." />
+                <label for="amount">Valor <br />
+                <small>(negativo = despesa, positivo = receita)</small></label>
+                <input type="number" id="amount" placeholder="Ex: -25.50" step="0.01" />
             </div>
-            <button class="btn">Adicionar</button>
+            <button class="btn">Adicionar Transação</button>
         </form>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
